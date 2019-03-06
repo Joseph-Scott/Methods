@@ -28,27 +28,34 @@ public class Main {
         // it should be sent one argument only, the player score
         // it should return an int
         // the return data should be
-        // 1 if the score is >1000
-        // 2 if the score is >500 and < 1000
-        // 3 if the score is > 100 and < 500
+        // 1 if the score is >=1000
+        // 2 if the score is >=500 and < 1000
+        // 3 if the score is >=100 and < 500
         // 4 in all other cases
         // call both methods and display the results of the following
         // a score of 1500, 900, 400, and 50
+        //
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Joe", highScorePosition);
+        displayHighScorePosition("Tim", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
-        displayHighScorePosition("Bill", highScorePosition);
-
-        highScorePosition = calculateHighScorePosition(400);
         displayHighScorePosition("Bob", highScorePosition);
 
+        highScorePosition = calculateHighScorePosition(400);
+        displayHighScorePosition("Percy", highScorePosition);
+
         highScorePosition = calculateHighScorePosition(50);
-        displayHighScorePosition("Fred", highScorePosition);
+        displayHighScorePosition("Gilbert", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(1000);
-        displayHighScorePosition("Jack", highScorePosition);
+        displayHighScorePosition("Louise", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(1000);
+        displayHighScorePosition("Carol", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(1000);
+        displayHighScorePosition("Frank", highScorePosition);
 
     }
 
@@ -74,7 +81,7 @@ public class Main {
             position = 1;
         } else if(playerScore >= 500) {
             position = 2;
-        } else if(playerScore >= 100) {
+        } else if(playerScore >= 100); {
             position = 3;
         }
 
